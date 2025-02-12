@@ -3,4 +3,9 @@ public class Email implements MailDeliveryService {
     public void sendMail() {
         System.out.println("Mailing via internet");
     }
+
+    @Override
+    public String getServiceName() {
+        return "Email";
+    }
 }
